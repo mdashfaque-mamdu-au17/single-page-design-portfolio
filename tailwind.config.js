@@ -15,6 +15,9 @@ module.exports = {
         'theme-light-cream': '#FFF7F0',
         'theme-background-white': '#F2F2F2',
       },
+      fontFamily: {
+        plusJakartaSans: ['Plus Jakarta Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="font-plusJakartaSans">
       <h1 className="bg-cyan-300">Hello world</h1>
     </div>
   );
