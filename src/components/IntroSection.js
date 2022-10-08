@@ -17,17 +17,17 @@ function IntroSection() {
           <Title
             type="primaryBlack"
             content="I'm Amy, and I'd love to work on your next project"
-            styles="text-[26px] leading-[33px] md:text-[32px] md:leading-[40px] font-bold"
+            styles="text-[26px] leading-[33px] md:text-[32px] md:leading-[40px] xl:text-[40px] xl:leading-[50px] font-bold"
           />
         </div>
-        <div className="pt-6 text-center sm:text-left">
+        <div className="pt-6 text-center sm:text-left xl:pt-[34px]">
           <Title
             type="secondaryBlack"
             content="I love working with others to create beautiful design solutions. I've designed everything from brand illustrations to complete mobile apps. I'm also handy with a camera!"
             styles="text-base leading-[26px] font-medium md:text-lg md:leading-[28px]"
           />
         </div>
-        <div className="pt-6 text-center sm:text-left">
+        <div className="pt-6 text-center sm:text-left xl:pt-8">
           <Button type="secondary">Free Consultation</Button>
         </div>
       </div>
