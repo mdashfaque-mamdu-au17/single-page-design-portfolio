@@ -47,7 +47,7 @@ function SkillsSection() {
               <SkillBox imageSrc={Apps} content="Apps" styles="bg-theme-pink" />
             </div>
           </div>
-          <div className="h-[158px] pt-6 sm:pt-0">
+          <div className="h-[158px] mt-6 sm:mt-0">
             <SkillBox
               imageSrc={Illustrations}
               content="Illustrations"
