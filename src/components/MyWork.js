@@ -8,6 +8,9 @@ import Image3 from '../assets/image-slide-3.jpg';
 import Image4 from '../assets/image-slide-4.jpg';
 import Image5 from '../assets/image-slide-5.jpg';
 import CarouselItem from './CarouselItem';
+import Right from '../assets/icon-arrow-right.svg';
+import Left from '../assets/icon-arrow-left.svg';
+import ButtonWithArrow from './ButtonWithArrow';
 
 const responsive = {
   desktop: {
@@ -16,7 +19,7 @@ const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 641 },
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
@@ -24,8 +27,22 @@ const responsive = {
     breakpoint: { max: 640, min: 0 },
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
-    partialVisibilityGutter: 10,
   },
+};
+
+const CustomButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+  const previousButtonHandler = () => {
+    return previous();
+  };
+  const nextButtonHanlder = () => {
+    return next();
+  };
+  return (
+    <div className="flex items-center justify-center gap-4 pt-8 sm:pt-14">
+      <ButtonWithArrow imageSrc={Right} onClick={previousButtonHandler} />
+      <ButtonWithArrow imageSrc={Left} onClick={nextButtonHanlder} />
+    </div>
+  );
 };
 function MyWork() {
   return (
@@ -48,7 +65,8 @@ function MyWork() {
           containerClass=""
           className=""
           itemClass=""
-          minimumTouchDrag={100}
+          infinite={true}
+          customButtonGroup={<CustomButtonGroup />}
         >
           <CarouselItem imageSrc={Image1} />
           <CarouselItem imageSrc={Image2} />
