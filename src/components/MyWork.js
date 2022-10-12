@@ -29,7 +29,7 @@ const responsive = {
 };
 function MyWork() {
   return (
-    <section className="pt-[100px] sm:pt-[420px] lg:pt-[88px] max-w-[1110px] mx-auto">
+    <section className="pt-[100px] sm:pt-[420px] md:pt-[120px] lg:pt-[88px] max-w-[1110px] mx-auto">
       <div className="text-center">
         <Title
           content="My Work"
