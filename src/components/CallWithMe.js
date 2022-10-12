@@ -4,7 +4,7 @@ import Title from './Title';
 
 function CallWithMe() {
   return (
-    <section className="mt-[100px] pl-[15px] pr-[17px] sm:pr-[39px] sm:pl-[39px] max-w-[1110px] xl:pr-0 xl:pl-0 mx-auto">
+    <section className="mt-[100px] sm:mt-[96px] pl-[15px] pr-[17px] sm:pr-[39px] sm:pl-[39px] max-w-[1110px] xl:pr-0 xl:pl-0 mx-auto">
       <div className="bg-theme-black rounded-[10px] lg:relative lg:pl-[65px]">
         <div className="sm:w-[540px] mx-auto lg:mx-0 lg:m-none">
           <div className="text-center pt-[49px] sm:pt-[56px] lg:pt-[81px] lg:text-left">
