@@ -39,8 +39,8 @@ const CustomButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
   };
   return (
     <div className="flex items-center justify-center gap-4 pt-8 sm:pt-14">
-      <ButtonWithArrow imageSrc={Right} onClick={previousButtonHandler} />
-      <ButtonWithArrow imageSrc={Left} onClick={nextButtonHanlder} />
+      <ButtonWithArrow imageSrc={Left} onClick={previousButtonHandler} />
+      <ButtonWithArrow imageSrc={Right} onClick={nextButtonHanlder} />
     </div>
   );
 };
